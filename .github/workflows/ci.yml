@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
+      - name: Install the Nix package manager
+        uses: cachix/install-nix-action@v22
+
+      - name: Flake Check
+        run: nix flake check

@@ -1,6 +1,8 @@
 # koreader-nix
 
-This repository allows to automatically install KOReader & KFMon with a one liner command on your ebook reader.
+[![.github/workflows/ci.yml](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml/badge.svg)](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml)
+
+This repository allows you to automatically install KOReader & KFMon on your ebook reader with a one liner command.
 
 ## Usage
 

@@ -4,9 +4,10 @@ This repository allows to automatically install KOReader & KFMon with a one line
 
 ## Usage
 
-1. Please checks any important changes [here](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices).
+1. Please check any important changes [here](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices).
 2. Make sure your ebook is plugged in.
-3. Update KOReader first and then KFMon if you need to.
+3. On the selection menu, update KOReader first.
+4. Re-run the command to update KFMon if you need to.
 
 The installer relies on the [semi-automated installation](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices#semi-automated-installation-method) method.
 

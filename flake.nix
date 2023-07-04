@@ -1,15 +1,27 @@
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   outputs = { self, nixpkgs }: let
-    pkgs = import nixpkgs {
-      system = "x86_64-linux";
-    };
+    forSystems = function:
+      nixpkgs.lib.genAttrs [
+        "x86_64-linux"
+        "aarch64-linux"
+      ]
+      (system: function {
+        inherit system;
+        pkgs = import nixpkgs {
+          inherit system;
+        };
+      });
   in {
-    packages.x86_64-linux.default = pkgs.callPackage ./default.nix { };
+    packages = forSystems ({ pkgs, system }: {
+      default = pkgs.callPackage ./default.nix { };
+    });
 
-    apps.x86_64-linux.default = {
-      type = "app";
-      program = "${self.packages.x86_64-linux.default}/koreader-installer";
-    };
+    apps = forSystems ({ pkgs, system }: {
+      default = {
+        type = "app";
+        program = "${self.packages.${system}.default}/koreader-installer";
+      };
+    });
   };
 }

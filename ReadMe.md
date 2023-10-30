@@ -4,6 +4,12 @@
 
 This repository allows you to automatically install KOReader & KFMon on your ebook reader with a one liner command.
 
+## Supported devices
+
+- Kobo
+
+To support new devices, feel free to contribute!
+
 ## Usage
 
 1. Please check any important changes [here](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices).

@@ -17,7 +17,7 @@ To support new devices, feel free to contribute!
 1. Please check any important changes [here](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices).
 2. Make sure your ebook is plugged in.
 3. On the selection menu, update KOReader first.
-4. Re-run the command to update KFMon if you need to.
+4. Re-run the command to update other dependencies.
 
 The installer relies on the [semi-automated installation](https://github.com/koreader/koreader/wiki/Installation-on-Kobo-devices#semi-automated-installation-method) method.
 
@@ -29,4 +29,4 @@ Et voilà!
 
 #### Versions
 
-You can check the file [default.nix](installers/kobo.nix) to see what versions are installed. Feel free to submit a pull request if new versions are available.
+You can check the source file [kobo.nix](installers/kobo.nix) to see what versions are installed. Feel free to submit a pull request if new versions are available.

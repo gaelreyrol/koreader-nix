@@ -1,8 +1,14 @@
 # koreader-nix
 
 [![.github/workflows/ci.yml](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml/badge.svg)](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml)
-[![flakestry.dev](https://flakestry.dev/flake/github/gaelreyrol/koreader-nix)](https://flakestry.dev/api/badge/flake/github/gaelreyrol/koreader-nix)
-[![koreader release](https://img.shields.io/github/release/koreader/koreader.svg)](https://github.com/koreader/koreader/releases)
+[![flakestry.dev](https://flakestry.dev/api/badge/flake/github/gaelreyrol/koreader-nix)](https://flakestry.dev/flake/github/gaelreyrol/koreader-nix)
+
+[![koreader release](https://img.shields.io/github/v/release/koreader/koreader?label=koreader)
+](https://github.com/koreader/koreader/releases)
+[![kfmon release](https://img.shields.io/github/v/tag/NiLuJe/kfmon?label=kfmon)
+](https://github.com/NiLuJe/kfmon/tags)
+[![plato release](https://img.shields.io/github/v/release/baskerville/plato?label=plato)
+](https://github.com/baskerville/plato/releases)
 
 This repository allows you to automatically install KOReader, KFMon and Plato on your ebook reader with a one liner command.
 

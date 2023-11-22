@@ -2,6 +2,7 @@
 
 [![.github/workflows/ci.yml](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml/badge.svg)](https://github.com/gaelreyrol/koreader-nix/actions/workflows/ci.yml)
 [![flakestry.dev](https://flakestry.dev/api/badge/flake/github/gaelreyrol/koreader-nix)](https://flakestry.dev/flake/github/gaelreyrol/koreader-nix)
+[![FlakeHub](https://img.shields.io/endpoint?url=https://flakehub.com/f/gaelreyrol/koreader-nix/badge)](https://flakehub.com/flake/gaelreyrol/koreader-nix)
 
 [![koreader release](https://img.shields.io/github/v/release/koreader/koreader?label=koreader)
 ](https://github.com/koreader/koreader/releases)

@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install the Nix package manager
-        uses: cachix/install-nix-action@v26
+        uses: cachix/install-nix-action@V27
 
       - name: Flake Check
         run: nix flake check

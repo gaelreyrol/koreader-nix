@@ -9,25 +9,25 @@
 
 let
   koreader = fetchurl {
-    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-KOReader-v2023.10.zip";
-    hash = "sha256-EcsAh453E9zZzm0dyzAEVT7LxV0naM3khEXKEgzC/GU=";
+    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-KOReader-v2024.11.zip";
+    hash = "sha256-pSVHXrfynUZx5FWYlcenERPHzXet0+Nr+P3R71Pmr5w=";
   };
   kfmon = fetchurl {
-    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-KFMon-1.4.6-39-g56612ad.zip";
-    hash = "sha256-IuUco0dI1TiOOOMNvC6w1f7fYMNjFVayL8nJNYJthcI=";
+    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-KFMon-1.4.6-139-g709df40.zip";
+    hash = "sha256-1croMElE09kpPBYxZ+kM9NJb7TBrsOx35y5QK+xEWoM=";
   };
   plato = fetchurl {
-    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-Plato-0.9.39.zip";
-    hash = "sha256-EjC1sETS44MPYa1TDb94QyDAullcbbOfLyhkh9XIFfg=";
+    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-Plato-0.9.44.zip";
+    hash = "sha256-WUbZPkkWX4bQ/z52kBEv1zENSj6dztZlte5cu5KhG2Y=";
   };
   koreader-plato = fetchurl {
-    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-Plato-0.9.39_KOReader-v2023.10.zip";
-    hash = "sha256-N4jh167/eflH6jHRSC28r/PzyMkribiJojH+57fO3+w=";
+    url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/OCP-Plato-0.9.44_KOReader-v2024.11.zip";
+    hash = "sha256-k7+BbuDQiCfoDmdAIvmYMWcDAwrhve0pF+GmVnoUKhQ=";
   };
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "kobo-installer";
-  version = "3.0.0";
+  version = "4.0.0";
 
   src = fetchzip {
     url = "https://storage.gra.cloud.ovh.net/v1/AUTH_2ac4bfee353948ec8ea7fd1710574097/kfmon-pub/kfm_nix_install.zip";

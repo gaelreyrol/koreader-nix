@@ -46,10 +46,10 @@ stdenv.mkDerivation (finalAttrs: {
     mv install.sh $out/bin/kobo-installer
     wrapProgram "$out/bin/kobo-installer" \
       --prefix PATH ":" "${lib.makeBinPath [ unzip util-linux ]}"
-    ln -s ${koreader} $out/OCP-KOReader-v${finalAttrs.version}.zip
-    ln -s ${kfmon} $out/OCP-KFMon-${finalAttrs.version}.zip
-    ln -s ${plato} $out/OCP-Plato-${finalAttrs.version}.zip
-    ln -s ${koreader-plato} $out/OCP-Plato-${finalAttrs.version}_KOReader-v${finalAttrs.version}.zip
+    ln -s ${koreader} $out/bin/OCP-KOReader-v${finalAttrs.version}.zip
+    ln -s ${kfmon} $out/bin/OCP-KFMon-${finalAttrs.version}.zip
+    ln -s ${plato} $out/bin/OCP-Plato-${finalAttrs.version}.zip
+    ln -s ${koreader-plato} $out/bin/OCP-Plato-${finalAttrs.version}_KOReader-v${finalAttrs.version}.zip
 
     runHook postInstall
   '';
